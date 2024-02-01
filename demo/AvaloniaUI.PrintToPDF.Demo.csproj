@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <UseControlOnNuget>True</UseControlOnNuget>
+    <UseControlOnNuget>False</UseControlOnNuget>
     <OutputType>WinExe</OutputType>
     <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
   </PropertyGroup>
