@@ -32,8 +32,8 @@ namespace AvaloniaUI.PrintToPDF
             foreach (var visual in visuals)
             {
                 // Save & Restore RenderTransform
-                using (Restorer.Create(visual.RenderTransformOrigin, x => visual.RenderTransformOrigin = x))
-                using (Restorer.Create(visual.RenderTransform, x => visual.RenderTransform = x))
+                using (Restorer.Create(() => visual.RenderTransformOrigin))
+                using (Restorer.Create(() => visual.RenderTransform))
                 {
                     // Fit visual to pageContentArea
                     var scale = pageContentArea.Width / visual.Bounds.Width;
